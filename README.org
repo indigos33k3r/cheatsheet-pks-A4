@@ -18,7 +18,7 @@
 
 - PDF Link: [[https://github.com/dennyzhang/cheatsheet-pks-A4/blob/master/cheatsheet-pks-A4.pdf][cheatsheet-pks-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/kubernetes/][kubernetes]]
 - Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-pks-A4
-- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-bosh-A4][Bosh CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-openshift-A4][OpenShift CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-vmware-A4][CheatSheet: VMware Products]], [[https://cheatsheet.dennyzhang.com/cheatsheet-openshift-A4][OpenShift CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 
 File me [[https://github.com/DennyZhang/cheatsheet-pks-A4/issues][Issues]] or star [[https://github.com/DennyZhang/cheatsheet-pks-A4][this repo]].
 ** PKS Reference
@@ -26,29 +26,19 @@ File me [[https://github.com/DennyZhang/cheatsheet-pks-A4/issues][Issues]] or st
 |-----------+---------------------------------------------------------------------------------------------|
 | YouTube   | [[https://www.youtube.com/playlist?list=PL7bmigfV0EqQzsvOcT8KYfulg-lpNsooC][YouTube: PKS Demos and Webcasts]], [[https://www.youtube.com/watch?v=d_NuJ7skpuY&index=19&list=PL7bmigfV0EqQzsvOcT8KYfulg-lpNsooC][YouTube: PKS overview]]                                      |
 | Reference | [[https://docs.pivotal.io/runtimes/pks/1-2/index.html][PKS Documentation]], [[https://docs.pivotal.io/runtimes/pks/1-2/concepts.html][PKS Concepts]], [[https://docs.pivotal.io/runtimes/pks/1-2/release-notes.html][PKS 1.2 Release Notes]], [[https://docs.pivotal.io/runtimes/pks/1-2/managing.html][Managing PKS 1.2]], [[https://www.virtuallyghetto.com/category/cloud-native][PKS personal blog]] |
-| Reference | [[https://cheatsheet.dennyzhang.com/cheatsheet-openshift-A4][OpenShift CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-rancher-A4][Rancher CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-vmware-A4][CheatSheet: VMware Products]]                       |
-| Reference | [[https://cheatsheet.dennyzhang.com/cheatsheet-bosh-A4][Bosh CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-tile-A4][Tile CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-uaa-A4][UAA CheatSheet]]                                            |
-| Reference | [[https://cheatsheet.dennyzhang.com/cheatsheet-tile-A4][Link: Get bosh/pks tile credential from om]]                                                  |
+| Reference | [[https://cheatsheet.dennyzhang.com/cheatsheet-openshift-A4][OpenShift CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-rancher-A4][Rancher CheatSheet]]                                                    |
+| Reference | [[https://cheatsheet.dennyzhang.com/cheatsheet-bosh-A4][Bosh CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-tile-A4][Tile CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-uaa-A4][UAA CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-vmware-A4][CheatSheet: VMware Products]]               |
 
 [[https://cheatsheet.dennyzhang.com/cheatsheet-pks-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet-pks-A4/master/pks-highlevel.png]]
-** PKS Strengths
-| Name                      | Summary                                                                     |
-|---------------------------+-----------------------------------------------------------------------------|
-| Kubernetes Federation     | Multiple clusters on-demand. Not only one kubernetes cluster for your infra |
-| End-to-end integration    | Monitoring and logging works out of box                                     |
-| VM LCM: auto healing      | VM health check and auto-replacement                                        |
-| Less vendor lock-in       | Vanilla Kubernetes; Any infra; Any OS                                       |
-| Networking with NSX-T     | Advanced CNI                                                                |
-| Image registry & security | Image sign, audit, replication; vulnerabilities scan                        |
 ** Key Components
-| Name                          | Summary                                                                |
-|-------------------------------+-------------------------------------------------------------------------------|
-| Computing virtualization      | [[https://docs.vmware.com/en/VMware-vSphere/index.html][Link: VMware vSphere Documentation]]                                            |
-| [[https://docs.vmware.com/en/VMware-NSX-T/2.2/com.vmware.nsxt.ncp_kubernetes.doc/GUID-52A92986-0FDF-43A5-A7BB-C037889F7559.html][NCP: CNI for Vmware NSX-T]]     | Help to create pod networks in PKS k8s clusters                               |
-| [[https://docs-cfcr.cfapps.io/][CFCR/Kubo]]                     | Deploy/manage fleets of k8s clusters. [[https://github.com/cloudfoundry-incubator/kubo-release#option-2-three-masters][GitHub: kubo-release]], [[https://github.com/cloudfoundry-incubator/cfcr-etcd-release][cfcr-etcd-release]] |
-| Bosh: VM lifecycle management | [[https://cheatsheet.dennyzhang.com/cheatsheet-bosh-A4][Link: BOSH CHEATSHEET]], [[https://github.com/cloudfoundry/bosh][Github: Bosh]]                                           |
-| Packaging: tile, ops manager  | [[https://cheatsheet.dennyzhang.com/cheatsheet-tile-A4][CheatSheet: Cloudfoundry Tile & OpsManager]]                                    |
-| CSI for persistent volume     | [[https://vmware.github.io/hatchway/#overview][GitHub: hatchway]]                                                              |
+| Name                                  | Summary                                                                       |
+|---------------------------------------+-------------------------------------------------------------------------------|
+| Computing virtualization              | [[https://docs.vmware.com/en/VMware-vSphere/index.html][Link: VMware vSphere Documentation]]                                            |
+| [[https://docs.vmware.com/en/VMware-NSX-T/2.2/com.vmware.nsxt.ncp_kubernetes.doc/GUID-52A92986-0FDF-43A5-A7BB-C037889F7559.html][NCP: CNI for Vmware NSX-T]]             | Help to create pod networks in PKS k8s clusters                               |
+| [[https://docs-cfcr.cfapps.io/][CFCR/Kubo]]                             | Deploy/manage fleets of k8s clusters. [[https://github.com/cloudfoundry-incubator/kubo-release#option-2-three-masters][GitHub: kubo-release]], [[https://github.com/cloudfoundry-incubator/cfcr-etcd-release][cfcr-etcd-release]] |
+| Bosh: VM/Cluster lifecycle management | [[https://cheatsheet.dennyzhang.com/cheatsheet-bosh-A4][Link: BOSH CHEATSHEET]], [[https://github.com/cloudfoundry/bosh][Github: Bosh]]                                           |
+| Packaging: tile, ops manager          | [[https://cheatsheet.dennyzhang.com/cheatsheet-tile-A4][CheatSheet: Cloudfoundry Tile & OpsManager]]                                    |
+| CSI for persistent volume             | [[https://vmware.github.io/hatchway/#overview][GitHub: hatchway]]                                                              |
 ** VMware Product Integrations
 | Name                         | Summary                                      |
 |------------------------------+----------------------------------------------|
@@ -91,13 +81,22 @@ File me [[https://github.com/DennyZhang/cheatsheet-pks-A4/issues][Issues]] or st
 | Better storage support of PV    | HA for PV, and support more CSI providers                                    |
 | Cleanup for stale resources     | When operations have failed, need to do the cleanup in a safe way            |
 | More built-in security supports | PKS supports most common security enhancements, but it doesn't provides them |
+** PKS Strengths
+| Name                      | Summary                                                                     |
+|---------------------------+-----------------------------------------------------------------------------|
+| Kubernetes Federation     | Multiple clusters on-demand. Not only one kubernetes cluster for your infra |
+| End-to-end integration    | Monitoring and logging works out of box                                     |
+| VM LCM: auto healing      | VM health check and auto-replacement                                        |
+| Less vendor lock-in       | Vanilla Kubernetes; Any infra; Any OS                                       |
+| Networking with NSX-T     | Advanced CNI                                                                |
+| Image registry & security | Image sign, audit, replication; vulnerabilities scan                        |
 ** PKS cli
 | Name                           | Command                                                                            |
 |--------------------------------+------------------------------------------------------------------------------------|
 | Check cli version              | =pks --version=                                                                    |
 | List all pks clusters          | =pks clusters=                                                                     |
-| Create cluster                 | =pks create-cluster <cluster-name1> -e myk8s1.pks.com -p "plan 1" -n 1=            |
-| Delete cluster                 | =pks delete-cluster <cluster-name1>=                                               |
+| Create cluster                 | =pks create-cluster <cluster-name> -e <subdomain>.pks.local -p "plan 1" -n 1=      |
+| Delete cluster                 | =pks delete-cluster <cluster-name>=                                                |
 | Check cluster status           | =pks cluster cluster1=                                                             |
 | Get cluster kubectl credential | =pks get-credentials <cluster_name>=                                               |
 | Set kubectl context            | =kubectl config use-context <cluster_name>=                                        |
@@ -4893,4 +4892,11 @@ om --target https://30.0.0.5 --username admin --password 'AdminXXX -k curl --req
 https://30.0.0.5/api/v0/deployed/director/credentials/postgres_credentials
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * HALF pks concourse jumpbox run kubectl command                   :noexport:
-* TODO [#A] Summarize pks footprint                                :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Configure pks tile manually                                 :noexport:
+* TODO kubo deployment: run kubectl                                :noexport:
+* TODO pks ops_files_paths vs lifecycle_errands/post_deploy        :noexport:
+* TODO Does kubo release need internet download?                   :noexport:
+https://github.com/cloudfoundry-incubator/kubo-release/blob/master/config/blobs.yml#L57
+
+In kubo-release, it download from container-images
